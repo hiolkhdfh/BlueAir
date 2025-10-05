@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BlueAir — ตัวอย่างเว็บสายการบิน</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="site-title">BlueAir</div>
+        <div class="site-sub">Premium regional airlines</div>
+      </div>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">เมนู</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="#fleet">ฝูงบิน</a></li>
+          <li><a href="thai-airways.html">Thai Airways</a></li>
+          <li><a href="siam-air.html">Siam Air</a></li>
+          <li><a href="#book" class="cta">จองตั๋ว</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <h1>สำรวจฝูงบิน</h1>
+        <p>เว็บโทนน้ำเงิน ใช้สีดำเป็นฐาน เหมาะสำหรับนำไปเก็บใน GitHub และ deploy เป็น GitHub Pages</p>
+        <div class="search" role="search" aria-label="ค้นหาสายการบิน">
+          <input id="search-input" class="input" placeholder="ค้นหาชื่อสายการบิน หรือ รุ่นเครื่องบิน (เช่น A320)" />
+          <button class="btn" id="search-clear">ล้าง</button>
+        </div>
+      </div>
+
+      <aside class="hero-aside">
+        <div class="hero-card small">
+          <h3>Quick facts</h3>
+          <p>สีหลัก: ดำ และโทนน้ำเงิน</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="fleet">
+      <h2 class="section-title">ฝูงบิน</h2>
+      <div class="grid">
+        <article class="card" aria-labelledby="ta1">
+          <div class="thumb" role="img" aria-label="Thai Airways A350">
+            <img src="https://example.com/images/thai-a350.jpg" alt="Thai Airways A350">
+          </div>
+          <h3 id="ta1">Thai Airways</h3>
+          <p>ฝูงบินตัวอย่าง: A350-900, A330, B787</p>
+          <div class="meta">
+            <span>รุ่นเด่น: A350</span>
+            <a class="link" href="thai-airways.html">ดูรายละเอียด →</a>
+          </div>
+        </article>
+
+        <article class="card" aria-labelledby="sa1">
+          <div class="thumb" role="img" aria-label="Siam Air A320">
+            <img src="https://example.com/images/siam-a320.jpg" alt="Siam Air A320">
+          </div>
+          <h3 id="sa1">Siam Air</h3>
+          <p>สายการบินภูมิภาค ฟลีท A320 family</p>
+          <div class="meta">
+            <span>รุ่นเด่น: A320</span>
+            <a class="link" href="siam-air.html">ดูรายละเอียด →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© BlueAir — ตัวอย่างเว็บไซต์</div>
+      <div>MaiddressCodeX</div>
+    </footer>
+  </div>
+</body>
+</html>
